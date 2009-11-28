@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>GCalendar</name>
+	<creationDate>Aug 2009</creationDate>
+	<author>Allon Moritz</author>
+	<authorEmail>info@gcalendar.laoneo.net</authorEmail>
+	<authorUrl>gcalendar.laoneo.net</authorUrl>
+	<copyright>This module is released under the GNU/GPL License.
+	</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html
+		GNU/GPL</license>
+	<version>2.1.2</version>
+	<description>Google calendar integrated in joomla.</description>
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>gcalendar.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+		<folder>views</folder>
+		<folder>hiddenviews</folder>
+		<folder>models</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">site/languages/en-GB.com_gcalendar.ini</language>
+		<language tag="de-DE">site/languages/de-DE.com_gcalendar.ini</language>
+	</languages>
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+			<file driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+			<file driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>
+	<administration>
+		<menu>GCalendar</menu>
+		<submenu>
+			<menu task="gcalendars">GCalendars</menu>
+			<menu view="google">Google Calendar</menu>
+			<menu view="tools">Tools</menu>
+			<menu view="support">Support</menu>
+		</submenu>
+		<files folder="admin">
+			<!-- Site Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>admin.gcalendar.php</filename>
+			<filename>controller.php</filename>
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
+			<filename>util.php</filename>
+			<filename>dbutil.php</filename>
+			<filename>config.xml</filename>
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>images</folder>
+			<folder>tables</folder>
+			<folder>css</folder>
+			<folder>elements</folder>
+			<folder>libraries</folder>
+		</files>
+		<languages>
+			<language tag="en-GB">admin/languages/en-GB.com_gcalendar.ini</language>
+			<language tag="de-DE">admin/languages/de-DE.com_gcalendar.ini</language>
+		</languages>
+	</administration>
+</install>

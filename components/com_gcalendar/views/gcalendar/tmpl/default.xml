@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="GCalendar">
+		<message>
+			<![CDATA[GCALENDAR LINK DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>GCalendar</name>
+		<description>GCALENDAR DESC</description>
+		<params addpath="/administrator/components/com_gcalendar/elements">
+			<param name="calendarids" type="gcalendar" default=""
+				label="Select Calendars" description="The calendars" />
+			<param name="show_selection" type="radio" default="yes"
+				label="Show Calendars" description="Shows the calendar list.">
+				<option value="no">No</option>
+				<option value="yes">Yes</option>
+			</param>
+			<param name="defaultView" type="list" default="month"
+				label="The default view"
+				description="The view which is shown when clicking the first time on a link.">
+				<option value="month">Month</option>
+				<option value="week">Week</option>
+				<option value="day">Day</option>
+			</param>
+			<param name="weekstart" type="list" default="2" label="Week starts on"
+				description="The starting day of the week in the calendar.">
+				<option value="1">Sunday</option>
+				<option value="2">Monday</option>
+				<option value="7">Saturday</option>
+			</param>
+			<param name="dateformat" type="list" default="dd/mm/yy" label="Date format"
+				description="The format of the date field.">
+				<option value="dd/mm/yy">Day/Month/Year</option>
+				<option value="mm/dd/yy">Month/Day/Year</option>
+				<option value="yy/mm/dd">Year/Month/Day</option>
+			</param>
+			<param name="textbefore" type="textarea" default=""
+				label="Content before calendar" description="This text will be displayed before the google calendar."
+				rows="5" cols="50" />
+			<param name="textafter" type="textarea" default=""
+				label="Content after calendar" description="This text will be displayed after the google calendar."
+				rows="5" cols="50" />
+			<param name="@spacer" type="spacer" default="" label=""
+				description="" />
+			<param name="pageclass_sfx" type="text" size="20" default=""
+				label="Page Class Suffix"
+				description="A suffix to be applied to the css classes of the page, this allows individual page styling" />
+		</params>
+		<advanced>
+			<param name="columnInWeekViewEqual" type="list" default="no"
+				label="Show Columns Equal" description="A flag to set the column width on equal size or not.">
+				<option value="no">No</option>
+				<option value="yes">Yes</option>
+			</param>
+			<param name="@spacer" type="spacer" default="" label=""
+				description="" />
+			<param name="cache" type="radio" default="no" label="Cache"
+				description="Is cacheing enabled.">
+				<option value="no">No</option>
+				<option value="yes">Yes</option>
+			</param>
+			<param name="cache_time" type="text" default="3600" label="Cache Time"
+				description="The cache time." />
+		</advanced>
+	</state>
+</metadata>

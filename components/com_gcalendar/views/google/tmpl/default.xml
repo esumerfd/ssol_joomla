@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Google">
+		<message>
+			<![CDATA[GCALENDAR LINK DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>Google</name>
+		<description>GCALENDAR DESC</description>
+		<params addpath="/administrator/components/com_gcalendar/elements">
+			<param name="calendarids" type="gcalendar" default=""
+				label="Select Calendars" description="The calendars" />
+			<param name="show_selection" type="radio" default="1"
+				label="Show Calendars" description="Shows the calendar selection list.">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="title" type="radio" default="1" label="Title"
+				description="">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="navigation" type="radio" default="1" label="Navigation"
+				description="">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="date" type="radio" default="1" label="Date"
+				description="">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="print" type="radio" default="1" label="Print icon"
+				description="">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="tabs" type="radio" default="1" label="Tabs"
+				description="">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="tz" type="radio" default="1" label="Time zone"
+				description="">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="width" type="text" size="5" default="100%" label="Width"
+				description="PARAMWIDTH" />
+			<param name="height" type="text" size="5" default="500" label="Height"
+				description="PARAMHEIGHT" />
+			<param name="view" type="radio" default="MONTH" label="Select an option"
+				description="">
+				<option value="WEEK">Week</option>
+				<option value="MONTH">Month</option>
+				<option value="AGENDA">Agenda</option>
+			</param>
+			<param name="weekstart" type="list" default="2" label="Week starts on"
+				description="">
+				<option value="1">Sunday</option>
+				<option value="2">Monday</option>
+				<option value="7">Saturday</option>
+			</param>
+			<param name="bgcolor" type="color" default="FFFFFF" label="Background color"
+				description="" size="10" />
+			<param name="@spacer" type="spacer" default="" label=""
+				description="" />
+			<param name="textbefore" type="textarea" default=""
+				label="Content before calendar" description="This text will be displayed before the google calendar."
+				rows="5" cols="50" />
+			<param name="textafter" type="textarea" default=""
+				label="Content after calendar" description="This text will be displayed after the google calendar."
+				rows="5" cols="50" />
+			<param name="@spacer" type="spacer" default="" label=""
+				description="" />
+			<param name="pageclass_sfx" type="text" size="20" default=""
+				label="Page Class Suffix"
+				description="A suffix to be applied to the css classes of the page, this allows individual page styling" />
+		</params>
+		<advanced>
+			<param name="use_custom_css" type="radio" default="0"
+				label="Use Custom CSS"
+				description="Use custom css in the googlecal folder. Check the documentation at gcalendar.laoneo.net for more information">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+		</advanced>
+	</state>
+</metadata>

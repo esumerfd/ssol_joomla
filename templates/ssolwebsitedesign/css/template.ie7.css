@@ -1,0 +1,119 @@
+/* begin Box, Sheet */
+.Sheet-tl
+{
+	clip: rect(auto 21px 21px auto);
+}
+
+.Sheet-tr
+{
+	clip: rect(auto auto 21px 21px);
+}
+
+.Sheet-bl
+{
+	clip: rect(21px 21px auto auto);
+}
+
+.Sheet-br
+{
+	clip: rect(21px auto auto 21px);
+}
+
+.Sheet-tc
+{
+	clip: rect(auto auto 21px auto);
+}
+
+.Sheet-bc
+{
+	clip: rect(21px auto auto auto);
+}
+
+.Sheet-cr
+{
+	clip: rect(auto auto auto 21px);
+}
+
+.Sheet-cl
+{
+	clip: rect(auto 21px auto auto);
+}
+/* end Box, Sheet */
+
+/* begin Menu */
+.nav .r
+{
+	clip: rect(auto auto auto 782px);
+}
+/* end Menu */
+
+/* begin MenuItem */
+.artmenu a .r
+{
+	clip: rect(auto auto auto 407px);
+}
+/* end MenuItem */
+
+/* begin BlockHeader */
+.BlockHeader .r
+{
+	clip: rect(auto auto auto 781px);
+}
+/* end BlockHeader */
+
+/* begin Box, Post */
+.Post-tl
+{
+	clip: rect(auto 7px 7px auto);
+}
+
+.Post-tr
+{
+	clip: rect(auto auto 7px 7px);
+}
+
+.Post-bl
+{
+	clip: rect(7px 7px auto auto);
+}
+
+.Post-br
+{
+	clip: rect(7px auto auto 7px);
+}
+
+.Post-tc
+{
+	clip: rect(auto auto 7px auto);
+}
+
+.Post-bc
+{
+	clip: rect(7px auto auto auto);
+}
+
+.Post-cr
+{
+	clip: rect(auto auto auto 7px);
+}
+
+.Post-cl
+{
+	clip: rect(auto 7px auto auto);
+}
+/* end Box, Post */
+
+/* begin PostContent */
+.PostContent
+{
+	height:1%;
+}
+/* end PostContent */
+
+/* begin Button */
+.Button .btn .r
+{
+	clip: rect(auto auto auto 404px);
+}
+/* end Button */
+
