@@ -206,11 +206,13 @@ class plgContentFlickrAlbum extends JPlugin {
     }
 
     // Output the album HTML
-    if (trim($this->title) != '') {
+    $title = trim($this->title);
+    if ($title != '' && $title != "none") {
       $html .= "<h3 class='gallery-flickr-title'>$this->title</h3>\n";
     }
     $html .= "<div id='gallery-flickr-$albumid' class='gallery_$this->color'>&nbsp;</div>\n";
-    $html .= "<div class='gallery-flickr-link'><a href='" . $this->buildFlickrLink() . "' target='_blank'>$this->linktext</a></div>\n";
+
+    // $html .= "<div class='gallery-flickr-link'><a href='" . $this->buildFlickrLink() . "' target='_blank'>$this->linktext</a></div>\n";
 
     // Add debugging trailer
     if ($this->debug) {
